@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1542437250 source:c:\c programmes\queue2\main.c
+
+1542439500 source:c:\c programmes\queue2\queue1.c
+	<Stdio.h>
+

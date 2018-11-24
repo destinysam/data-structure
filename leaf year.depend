@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1542774839 source:c:\c programmes\leaf year\main.c
+	<stdio.h>
+	<stdbool.h>
+
+1542775968 source:c:\c programmes\leaf year\output.c
+	"Stdio.h"
+
