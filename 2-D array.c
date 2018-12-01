@@ -7,7 +7,8 @@ void avg_year_rainfall();
 void avg_month_rainfall();
 void max_month_rainfall();
 void max_year_rainfall();
-int max=0,ch,sum=0,i,j,a=0,avg=0;
+float max=0,
+int ch,sum=0,i,j,a=0,avg=0;
 int main()
 {
 
