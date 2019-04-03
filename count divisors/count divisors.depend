@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554203140 source:c:\programming\count divisors\main.c
+	<stdio.h>
+	<stdlib.h>
+

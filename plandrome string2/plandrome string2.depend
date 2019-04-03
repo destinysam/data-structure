@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552241264 source:c:\programming\plandrome string2\main.c
+	<stdio.h>
+	<string.h>
+	<string.h>
+

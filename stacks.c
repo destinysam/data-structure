@@ -1,94 +1,108 @@
-#include<stdio.h>
-int stack[100],x,n,i,top,choice;
-void push(void);
-void pop(void);
-void display(void);
-int main()
-{
-    int top=-1;
-    printf("enter the elements of arraystack are");
-    scanf("%d",&n);
-    printf("the stacks elements are \n");
-    printf("-------------------------------\n");
-    printf("\n\t 1. push\n\t 2. pop\n\t 3. display\n\t 4. exit\n\t ");
-    do
+#include<Stdio.h>
+    int stack[100],choice,n,top,x,i;
+    void push(void);
+    void pop(void);
+    void display(void);
+    int main()
     {
-
-        printf("enter the choice");
-        scanf("%d",&choice);
-        switch(choice)
+        top=-1;
+        printf("\n enter  the size of stack max=[100] :");
+        scanf("%d",&n);
+        printf("\n\t stack operation usinr array");
+        printf("\n\t--------------------------------");
+        printf("\n\t 1.push \n\t2.pop\n\t3.display \n\t4.exit\n\t");
+        do
         {
-        case 1 :
+         printf("enter the choice\n");
+         scanf("%d",&choice) ;
+         switch(choice)
+         {
+
+
+         case 1:
             push();
             break;
-            case 2:
+         case 2:
             pop();
             break;
-            case 3:
-                display();
-                break;
-            case 4:
-                printf("exit point ");
-                break;
-            default :
-                printf("u entered wrong key");
+         case 3:
+            display();
+            break;
+         case 4:
+            printf("\n\texit point");
+            break;
+         default:
+            printf("u entered wrong key");
+
+         }
+
         }
-    }
-            while(choice!=4);
+
+
+    while(choice!=4);
             return 0;
 
-
-    }
-
+}
 void push()
 {
-if(top>=n)
+    if(top>=n-1)
     {
-    printf("the stack is full\n");
-}
+
+        printf("\n\t stack is over flow");
+
+    }
+
 else
-{
-
-
-            printf("enter the elements u want to push");
-                    scanf("%d",&x);
-                    top++;
-                    stack[top]=x;
-}
-}
-void pop()
-{
-    if(top<=-1)
     {
 
-        printf("the stack is under flow \n");
+        printf(" enter a value to be pushed");
+        scanf("%d",&x);
+        top++;
+        stack[top]=x;
+
     }
+
+}
+    void pop()
+    {
+
+        if(top>=n-1)
+        {
+
+            printf("\n\t stacks are under flow");
+
+        }
+
     else
-    {
+        {
 
-        printf("the popped elements are %d\n",stack[top]);
-        top--;
-    }
+            printf("\n\t the popped elements are %d\n",stack[top]);
+            top--;
+
+        }
+
     }
     void display()
     {
+
         if(top>=0)
-            {
+        {
 
-        printf("entered elements are\n");
-        for(i=top;i>=0;i--){
-            printf("%d\n  ",stack[i]);
-        }
-            printf("enter the next choice\n");
-
+            printf("\n the elements in stack \n");
+            for(i=top;i>=0;i--)
+        printf("%d\n",stack[i]);
+        printf("\n press next choice");
         }
         else
         {
 
+            printf("\nthe stack is empty\n");
 
-
-            printf("the stack is empty \n");
+        }
 
 
     }
-    }
+
+
+
+

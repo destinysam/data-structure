@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552580115 source:c:\programming\shift in array\main.c
+	<stdio.h>
+	<stdlib.h>
+
